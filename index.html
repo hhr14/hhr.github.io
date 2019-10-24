@@ -1,12 +1,281 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<title>Facedemo</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
-<body>
-	<video width="400" height="300" controls>
-  		<source src="demo/sample.mp4" type="video/mp4">
-		您的浏览器不支持Video标签。
-	</video>
+<body bgcolor="#E6E6FA">
+	<div class='container'>
+		<div class="row justify-content-center alert alert-primary" role="alert">
+			<h3 class="alert-heading">
+				Paper: SPEAKER AND LANGUAGE INDEPENDENT SPEECH-DRIVEN EXPRESSIVE
+			</h3>
+			<h3>
+				TALKING HEAD GENERATION USING PHONETIC POSTERIORGRAMS
+			</h3>
+			<h5 class="mb-0">
+				Huirong Huang, Shiyin Kang, Zhiyong Wu, Jia Jia, Tianxiao Fu, Deyi Tuo
+			</h5>
+			<h5>
+				Guangzhi Lei, Peng Liu, Dan Su, Dong Yu, Helen Meng
+			</h5>
+		</div>
+	</div>
+	<div class="container alert alert-warning" role="alert">
+		<div class="row justify-content-md-center">
+			<h3>Emotion</h3>
+		</div>
+		<div class="row justify-content-md-center">
+			<p>Corresponding model: Top left: BLSTM-PPG; Top right: CNN-PPG; Bottom left: BLSTM-MFCC; Bottom right: Groundtruth.</p>
+		</div>
+		<hr>
+		<div class="row">
+			<div class="col-6">
+				<div class="media">
+			  		<video width="300" height="225" class="mr-3" controls>
+		  				<source src="demo/sample.mp4" type="video/mp4">
+					</video>
+				  	<div class="media-body">
+					    <h5 class="mt-0">Neutral - 1</h5>
+					    对应的文本信息
+				  	</div>
+				</div>
+			</div>
+			<div class="col-6">
+				<div class="media">
+			  		<video width="300" height="225" class="mr-3" controls>
+		  				<source src="demo/sample.mp4" type="video/mp4">
+					</video>
+				  	<div class="media-body">
+					    <h5 class="mt-0">Neutral - 2</h5>
+					    对应的文本信息
+				  	</div>
+				</div>
+			</div>
+		</div>
+		<br>
+		<div class="row">
+			<div class="col-6">
+				<div class="media">
+			  		<video width="300" height="225" class="mr-3" controls>
+		  				<source src="demo/sample.mp4" type="video/mp4">
+					</video>
+				  	<div class="media-body">
+					    <h5 class="mt-0">Angry - 1</h5>
+					    对应的文本信息
+				  	</div>
+				</div>
+			</div>
+			<div class="col-6">
+				<div class="media">
+			  		<video width="300" height="225" class="mr-3" controls>
+		  				<source src="demo/sample.mp4" type="video/mp4">
+					</video>
+				  	<div class="media-body">
+					    <h5 class="mt-0">Angry - 2</h5>
+					    对应的文本信息
+				  	</div>
+				</div>
+			</div>
+		</div>
+		<br>
+		<div class="row">
+			<div class="col-6">
+				<div class="media">
+			  		<video width="300" height="225" class="mr-3" controls>
+		  				<source src="demo/sample.mp4" type="video/mp4">
+					</video>
+				  	<div class="media-body">
+					    <h5 class="mt-0">Happy - 1</h5>
+					    对应的文本信息
+				  	</div>
+				</div>
+			</div>
+			<div class="col-6">
+				<div class="media">
+			  		<video width="300" height="225" class="mr-3" controls>
+		  				<source src="demo/sample.mp4" type="video/mp4">
+					</video>
+				  	<div class="media-body">
+					    <h5 class="mt-0">Happy - 2</h5>
+					    对应的文本信息
+				  	</div>
+				</div>
+			</div>
+		</div>
+		<br>
+		<div class="row">
+			<div class="col-6">
+				<div class="media">
+			  		<video width="300" height="225" class="mr-3" controls>
+		  				<source src="demo/sample.mp4" type="video/mp4">
+					</video>
+				  	<div class="media-body">
+					    <h5 class="mt-0">Sad - 1</h5>
+					    对应的文本信息
+				  	</div>
+				</div>
+			</div>
+			<div class="col-6">
+				<div class="media">
+			  		<video width="300" height="225" class="mr-3" controls>
+		  				<source src="demo/sample.mp4" type="video/mp4">
+					</video>
+				  	<div class="media-body">
+					    <h5 class="mt-0">Sad - 2</h5>
+					    对应的文本信息
+				  	</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container alert alert-warning" role="alert">
+		<div class="row justify-content-md-center">
+			<h3>Different language or speaker</h3>
+		</div>
+		<div class="row justify-content-md-center">
+			<p class="mb-0">Emotion is all neutral. Check neutral results above for same speaker and language case.</p>
+			<p>Corresponding model: Top left: BLSTM-PPG; Top right: CNN-PPG; Bottom left: BLSTM-MFCC; Bottom right: Groundtruth.</p>
+		</div>
+		<hr>
+		<div class="row">
+			<div class="col-6">
+				<div class="media">
+			  		<video width="300" height="225" class="mr-3" controls>
+		  				<source src="demo/sample.mp4" type="video/mp4">
+					</video>
+				  	<div class="media-body">
+					    <h5 class="mt-0">Same speaker & different language - Multilingual</h5>
+					    对应的文本信息
+				  	</div>
+				</div>
+			</div>
+			<div class="col-6">
+				<div class="media">
+			  		<video width="300" height="225" class="mr-3" controls>
+		  				<source src="demo/sample.mp4" type="video/mp4">
+					</video>
+				  	<div class="media-body">
+					    <h5 class="mt-0">Same speaker & different language - Mixlingual</h5>
+					    对应的文本信息
+				  	</div>
+				</div>
+			</div>
+		</div>
+		<br>
+		<div class="row">
+			<div class="col-6">
+				<div class="media">
+			  		<video width="300" height="225" class="mr-3" controls>
+		  				<source src="demo/sample.mp4" type="video/mp4">
+					</video>
+				  	<div class="media-body">
+					    <h5 class="mt-0">Different speaker & Same language - Male</h5>
+					    对应的文本信息
+				  	</div>
+				</div>
+			</div>
+			<div class="col-6">
+				<div class="media">
+			  		<video width="300" height="225" class="mr-3" controls>
+		  				<source src="demo/sample.mp4" type="video/mp4">
+					</video>
+				  	<div class="media-body">
+					    <h5 class="mt-0">Different speaker & Same language - Female</h5>
+					    对应的文本信息
+				  	</div>
+				</div>
+			</div>
+		</div>
+		<br>
+		<div class="row">
+			<div class="col-6">
+				<div class="media">
+			  		<video width="300" height="225" class="mr-3" controls>
+		  				<source src="demo/sample.mp4" type="video/mp4">
+					</video>
+				  	<div class="media-body">
+					    <h5 class="mt-0">Different speaker & Different language - Male, Multilingual</h5>
+					    对应的文本信息
+				  	</div>
+				</div>
+			</div>
+			<div class="col-6">
+				<div class="media">
+			  		<video width="300" height="225" class="mr-3" controls>
+		  				<source src="demo/sample.mp4" type="video/mp4">
+					</video>
+				  	<div class="media-body">
+					    <h5 class="mt-0">Different speaker & Different language - Male, Mixlingual</h5>
+					    对应的文本信息
+				  	</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-6">
+				<div class="media">
+			  		<video width="300" height="225" class="mr-3" controls>
+		  				<source src="demo/sample.mp4" type="video/mp4">
+					</video>
+				  	<div class="media-body">
+					    <h5 class="mt-0">Different speaker & Different language - Female, Multilingual</h5>
+					    对应的文本信息
+				  	</div>
+				</div>
+			</div>
+			<div class="col-6">
+				<div class="media">
+			  		<video width="300" height="225" class="mr-3" controls>
+		  				<source src="demo/sample.mp4" type="video/mp4">
+					</video>
+				  	<div class="media-body">
+					    <h5 class="mt-0">Different speaker & Different language - Female, Mixlingual</h5>
+					    对应的文本信息
+				  	</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container alert alert-warning" role="alert">
+		<div class="row justify-content-md-center">
+			<h3>With/Without energy</h3>
+		</div>
+		<div class="row justify-content-md-center">
+			<p class="mb-0">Emotion is all neutral. Check neutral results above for same speaker and language case.</p>
+			<p>Corresponding model: Top left: BLSTM-PPG; Top right: CNN-PPG; Bottom left: BLSTM-MFCC; Bottom right: Groundtruth.</p>
+		</div>
+		<hr>
+		<div class="row">
+			<div class="col-6">
+				<div class="media">
+			  		<video width="300" height="225" class="mr-3" controls>
+		  				<source src="demo/sample.mp4" type="video/mp4">
+					</video>
+				  	<div class="media-body">
+					    <h5 class="mt-0">Same speaker & different language - Multilingual</h5>
+					    对应的文本信息
+				  	</div>
+				</div>
+			</div>
+			<div class="col-6">
+				<div class="media">
+			  		<video width="300" height="225" class="mr-3" controls>
+		  				<source src="demo/sample.mp4" type="video/mp4">
+					</video>
+				  	<div class="media-body">
+					    <h5 class="mt-0">Same speaker & different language - Mixlingual</h5>
+					    对应的文本信息
+				  	</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 </html>
